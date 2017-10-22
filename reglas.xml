@@ -1,15 +1,13 @@
 <context>
   <input pattern="(hola|buenas) *">
     <output value="Hola!"/>
-    <context if="empty($UserName)">
       <output value="¿Cual es tu nombre?"/>
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Un gusto $UserName!"/>
       </input>
-    </context>
   </input>
-  <input pattern="(tengo una duda|tengo un problema|duda|problema) *">
-    <output value="Sí, $UserName dime en qué te podemos ayudar?"/>
+   <input pattern="(tengo una duda|tengo un problema|duda|problema) *">
+    <output value="Hola $UserName dime en qué te podemos ayudar?"/>
   </input> 
 </context>
