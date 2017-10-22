@@ -1,7 +1,6 @@
 <context>
   <input pattern="(hola|buenas) *">
-    <output value="Hola!"/>
-      <output value="¿Cual es tu nombre?"/>
+    <output value="Hola! ¿Cual es tu nombre?"/>
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Un gusto $UserName!"/>
