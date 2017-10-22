@@ -9,4 +9,7 @@
       </input>
     </context>
   </input>
+  <input pattern="(tengo una duda|tengo un problema|duda|problema) *">
+    <output value="Sí, $UserName dime en qué te podemos ayudar?"/>
+  </input> 
 </context>
